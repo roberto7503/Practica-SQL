@@ -5,9 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>EjercicioConexionBD</artifactId>
+    <artifactId>RegistroEmpleadosFX</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>EjercicioConexionBD</name>
+    <name>RegistroEmpleadosFX</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -42,7 +42,6 @@
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
             <version>42.7.13</version>
-            <scope>test</scope>
         </dependency>
     </dependencies>
 
@@ -63,11 +62,10 @@
                 <version>0.0.8</version>
                 <executions>
                     <execution>
-                        <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                org.example.ejercicioconexionbd/org.example.ejercicioconexionbd.HelloApplication
+                                org.example.practicasql/org.example.practicasql.RegistroEmpleadosApplication
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>

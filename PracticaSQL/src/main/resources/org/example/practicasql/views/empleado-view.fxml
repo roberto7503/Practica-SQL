@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="615.0" prefWidth="694.0" styleClass="ventana-principal" stylesheets="@../estilos/estilos.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.practicasql.controller.EmpleadoController">
+   <children>
+      <Label layoutX="232.0" layoutY="14.0" styleClass="titulo" text="Registro de Empleados">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Line endX="569.8" layoutX="115.0" layoutY="47.0" opacity="0.25" startX="-100.0" />
+      <Label layoutX="19.0" layoutY="58.0" text="Nombres:" />
+      <Label layoutX="19.0" layoutY="95.0" text="Apellidos:" />
+      <Label layoutX="18.0" layoutY="134.0" text="Cédula:" />
+      <Label layoutX="18.0" layoutY="175.0" text="Correo:" />
+      <Label layoutX="18.0" layoutY="210.0" text="Teléfono:" />
+      <Label layoutX="302.0" layoutY="58.0" text="Departamento:" />
+      <Label layoutX="332.0" layoutY="95.0" text="Cargo:" />
+      <Label layoutX="18.0" layoutY="251.0" text="Salario:" />
+      <Label layoutX="19.0" layoutY="290.0" text="Fecha de contratación:" />
+      <Label layoutX="329.0" layoutY="134.0" text="Estado:" />
+      <TextField fx:id="txtNombre" layoutX="100.0" layoutY="58.0" prefWidth="194.0" promptText="Escriba sus nombres" />
+      <TextField fx:id="txtApellido" layoutX="100.0" layoutY="95.0" prefWidth="194.0" promptText="Escriba sus apellidos" />
+      <TextField fx:id="txtCedula" layoutX="100.0" layoutY="134.0" prefWidth="194.0" promptText="Escriba su cédula" />
+      <TextField fx:id="txtCorreo" layoutX="100.0" layoutY="175.0" prefWidth="194.0" promptText="Escriba su correo" />
+      <TextField fx:id="txtTelefono" layoutX="98.0" layoutY="210.0" prefWidth="194.0" promptText="Escriba su teléfono" />
+      <TextField fx:id="txtSalario" layoutX="96.0" layoutY="251.0" prefWidth="194.0" promptText="Escriba su salario" />
+      <ComboBox fx:id="cmbDepartamento" layoutX="415.0" layoutY="58.0" prefWidth="150.0" promptText="Seleccione departamento" />
+      <ComboBox fx:id="cmCargo" layoutX="415.0" layoutY="95.0" prefWidth="150.0" promptText="Seleccione cargo" />
+      <ComboBox fx:id="cmbEstado" layoutX="416.0" layoutY="135.0" prefWidth="150.0" promptText="Seleccione estado" />
+      <DatePicker fx:id="dpFecha" layoutX="189.0" layoutY="290.0" promptText="Elija una fecha" />
+      <Button fx:id="btnLimpiar" layoutX="28.0" layoutY="327.0" mnemonicParsing="false" onAction="#limpiarCampos" text="Limpiar" />
+      <Button fx:id="btnActualizar" layoutX="126.0" layoutY="327.0" mnemonicParsing="false" onAction="#cargarEmpleados" text="Actualizar tabla" />
+      <Button fx:id="btnGuardar" layoutX="257.0" layoutY="327.0" mnemonicParsing="false" onAction="#guardarEmpleado" text="Guardar" />
+      <TableView fx:id="tblEmpleados" layoutY="367.0" prefHeight="246.0" prefWidth="694.0">
+         <columns>
+            <TableColumn fx:id="colId" prefWidth="31.0" text="ID" />
+            <TableColumn fx:id="colNombres" prefWidth="60.0" text="Nombres" />
+            <TableColumn fx:id="colApellidos" prefWidth="55.0" text="Apellidos" />
+            <TableColumn fx:id="colCedula" prefWidth="55.0" text="Cédula" />
+            <TableColumn fx:id="colCorreo" prefWidth="65.0" text="Correo" />
+            <TableColumn fx:id="colTelefono" prefWidth="60.0" text="Teléfono" />
+            <TableColumn fx:id="colCargo" prefWidth="65.0" text="Cargo" />
+            <TableColumn fx:id="colDepartamento" prefWidth="85.0" text="Departamento" />
+            <TableColumn fx:id="colSalario" prefWidth="60.0" text="Salario" />
+            <TableColumn fx:id="colFecha" prefWidth="85.0" text="Fecha contratación" />
+            <TableColumn fx:id="colEstado" prefWidth="70.0" text="Estado" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

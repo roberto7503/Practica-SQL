@@ -1,7 +1,6 @@
 package org.example.practicasql.model;
 
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.DatePicker;
+import java.time.LocalDate;
 
 public class Empleado {
     private int id;
@@ -9,26 +8,30 @@ public class Empleado {
     private String apellidos;
     private String cedula;
     private String correo;
-    private String  telefono;
-    private Double salario;
-    private String celular;
-    private DatePicker fecha;
-    private ComboBox departamento;
-    private ComboBox cargo;
-    private ComboBox estado;
+    private String telefono;
+    private String cargo;
+    private String departamento;
+    private double salario;
+    private LocalDate fechaContratacion;
+    private String estado;
 
-    public Empleado(int id, String nombres, String apellidos, String cedula, String correo, String telefono, Double salario, String celular, DatePicker fecha, ComboBox departamento, ComboBox cargo, ComboBox estado) {
+    public Empleado() {
+    }
+
+    public Empleado(int id, String nombres, String apellidos, String cedula,
+                    String correo, String telefono, String cargo,
+                    String departamento, double salario,
+                    LocalDate fechaContratacion, String estado) {
         this.id = id;
         this.nombres = nombres;
         this.apellidos = apellidos;
         this.cedula = cedula;
         this.correo = correo;
         this.telefono = telefono;
-        this.salario = salario;
-        this.celular = celular;
-        this.fecha = fecha;
-        this.departamento = departamento;
         this.cargo = cargo;
+        this.departamento = departamento;
+        this.salario = salario;
+        this.fechaContratacion = fechaContratacion;
         this.estado = estado;
     }
 
@@ -80,51 +83,43 @@ public class Empleado {
         this.telefono = telefono;
     }
 
-    public Double getSalario() {
-        return salario;
-    }
-
-    public void setSalario(Double salario) {
-        this.salario = salario;
-    }
-
-    public String getCelular() {
-        return celular;
-    }
-
-    public void setCelular(String celular) {
-        this.celular = celular;
-    }
-
-    public DatePicker getFecha() {
-        return fecha;
-    }
-
-    public void setFecha(DatePicker fecha) {
-        this.fecha = fecha;
-    }
-
-    public ComboBox getDepartamento() {
-        return departamento;
-    }
-
-    public void setDepartamento(ComboBox departamento) {
-        this.departamento = departamento;
-    }
-
-    public ComboBox getCargo() {
+    public String getCargo() {
         return cargo;
     }
 
-    public void setCargo(ComboBox cargo) {
+    public void setCargo(String cargo) {
         this.cargo = cargo;
     }
 
-    public ComboBox getEstado() {
+    public String getDepartamento() {
+        return departamento;
+    }
+
+    public void setDepartamento(String departamento) {
+        this.departamento = departamento;
+    }
+
+    public double getSalario() {
+        return salario;
+    }
+
+    public void setSalario(double salario) {
+        this.salario = salario;
+    }
+
+    public LocalDate getFechaContratacion() {
+        return fechaContratacion;
+    }
+
+    public void setFechaContratacion(LocalDate fechaContratacion) {
+        this.fechaContratacion = fechaContratacion;
+    }
+
+    public String getEstado() {
         return estado;
     }
 
-    public void setEstado(ComboBox estado) {
+    public void setEstado(String estado) {
         this.estado = estado;
     }
 }

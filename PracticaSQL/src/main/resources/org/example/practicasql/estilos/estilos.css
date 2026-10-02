@@ -1,0 +1,33 @@
+.ventana-principal {
+    -fx-background-color: #f4f6f9;
+    -fx-font-family: "Segoe UI";
+}
+
+.titulo {
+    -fx-text-fill: #1f3b5b;
+    -fx-font-weight: bold;
+}
+
+.text-field,
+.combo-box,
+.date-picker {
+    -fx-background-color: white;
+    -fx-border-color: #b8c2cc;
+    -fx-border-radius: 3;
+}
+
+.button {
+    -fx-background-color: #2979b9;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 4;
+}
+
+.table-view {
+    -fx-border-color: #b8c2cc;
+}
+
+.table-view .column-header {
+    -fx-background-color: #dce8f2;
+    -fx-font-weight: bold;
+}
