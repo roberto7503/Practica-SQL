@@ -1,0 +1,28 @@
+/* Estilo base para el fondo de la ventana */
+.root {
+    -fx-background-color: #f4f6f9;
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Estilo para los botones */
+.button {
+    -fx-background-color: #0078D7;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5; /* Bordes redondeados */
+    -fx-padding: 8 15 8 15;
+}
+
+/* Estilo para cuando el mouse pasa sobre el botón (Hover) */
+.button:hover {
+    -fx-background-color: #005A9E;
+    -fx-cursor: hand;
+}
+
+/* Estilo para los campos de texto */
+.text-field {
+    -fx-background-radius: 3;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 3;
+    -fx-padding: 5;
+}
